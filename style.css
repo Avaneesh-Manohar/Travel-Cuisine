@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: url(https://travel-diary-complete.webdevdev1.repl.co/cn.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+header{
+    height: 100vh;
+}
+
+nav{
+    width: 90%;
+    height: 14%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo h3{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+hr{
+    border: .1px solid rgba(243,237,237,0.10);
+}
+
+#container{
+    width: 100%;
+    height: 86%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content{
+    width: 70%;
+    text-align: center;
+    color: white;
+}
+
+#content h2{
+    font-weight: 100;
+    letter-spacing: 10px;
+    font-size: 28px;
+}
+
+#content h1{
+    text-align: center;
+    font-size: 4rem;
+}
+
+#content button{
+    font-weight: 400;
+    background-color: transparent;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 0.7rem 2rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+
+.clouds{
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -10%;
+}
+
+.clouds img{
+    width: 50px;
+    animation: clouds 5s infinite ;
+}
+
+.clouds img:nth-child(1){
+    animation-delay: 2s;
+}
+
+.clouds img:nth-child(2){
+    animation-delay: 3s;
+}
+
+.clouds img:nth-child(3){
+    animation-delay: 4s;
+}
+
+.clouds img:nth-child(4){
+    animation-delay: 5s;
+}
+
+.clouds img:nth-child(5){
+    animation-delay: 2s;
+}
+
+.clouds img:nth-child(6){
+    animation-delay: 1s;
+}
+
+#galleryDiv{
+    width: 100%;
+    min-height: 80vh;
+    background-color: rgb(36,36,36);
+    text-align: center;
+    padding: 70px;
+    color: white;
+    overflow: hidden;
+}
+
+#imageGallery{
+    width: 100%;
+    min-height: 380px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;;
+}
+.card{
+    width: 300px;
+    height: 380px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+}
+
+.card:hover img{
+    filter: grayscale(0.8);
+    cursor: pointer;
+}
+
+@keyframes screen {
+    to{
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes clouds{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
